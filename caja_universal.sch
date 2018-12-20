@@ -208,21 +208,6 @@
 <rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 </package>
-<package name="1X01">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
 <package name="1X04/90">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-1.905" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
@@ -291,15 +276,6 @@
 <text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-<symbol name="PINHD1">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -380,22 +356,6 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X01">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4039,8 +3999,9 @@ NS Package M08A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM318" prefix="IC">
-<description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
+<deviceset name="NE5534" prefix="IC">
+<description>&lt;b&gt;LOW-NOISE OPERATIONAL AMPLIFIER&lt;/b&gt;&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/symlink/ne5534.pdf</description>
 <gates>
 <gate name="A" symbol="2NUL2CMP" x="5.08" y="0"/>
 </gates>
@@ -4049,30 +4010,32 @@ NS Package M08A</description>
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="CMP" pad="8"/>
-<connect gate="A" pin="ON" pad="5"/>
-<connect gate="A" pin="ON/CMP" pad="1"/>
+<connect gate="A" pin="CMP" pad="5"/>
+<connect gate="A" pin="ON" pad="1"/>
+<connect gate="A" pin="ON/CMP" pad="8"/>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="A" pin="V+" pad="7"/>
 <connect gate="A" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="A"/>
 </technologies>
 </device>
 <device name="D" package="SO08">
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="CMP" pad="8"/>
-<connect gate="A" pin="ON" pad="5"/>
-<connect gate="A" pin="ON/CMP" pad="1"/>
+<connect gate="A" pin="CMP" pad="5"/>
+<connect gate="A" pin="ON" pad="1"/>
+<connect gate="A" pin="ON/CMP" pad="8"/>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="A" pin="V+" pad="7"/>
 <connect gate="A" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="A"/>
 </technologies>
 </device>
 </devices>
@@ -4208,65 +4171,140 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/37793330023930AD620_e.pd
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor">
-<description>&lt;b&gt;Transistors&lt;/b&gt;&lt;p&gt;
+<library name="con-coax">
+<description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
+Radiall  and M/A COM.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO92-ECB">
-<description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line E C B from top&lt;p&gt;</description>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583"/>
-<wire x1="1.136" y1="-0.127" x2="-1.136" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="-2.413" y1="1.1359" x2="-2.664" y2="-0.127" width="0.127" layer="51" curve="27.9407"/>
-<wire x1="-2.664" y1="-0.127" x2="-2.413" y2="-1.1359" width="0.127" layer="51" curve="22.4788"/>
-<wire x1="-1.404" y1="-0.127" x2="-2.664" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.127" layer="21" curve="13.0385"/>
-<wire x1="-1.136" y1="-0.127" x2="-1.404" y2="-0.127" width="0.127" layer="21"/>
-<wire x1="2.413" y1="-1.1359" x2="2.664" y2="-0.127" width="0.127" layer="51" curve="22.4788"/>
-<wire x1="2.664" y1="-0.127" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="27.9333"/>
-<wire x1="2.664" y1="-0.127" x2="1.404" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="1.404" y1="-0.127" x2="1.136" y2="-0.127" width="0.127" layer="21"/>
-<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.127" layer="21" curve="13.6094"/>
-<pad name="C" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="E" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="B" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<package name="A1944">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+50 Ohm&lt;p&gt;
+distributor Buerklin 78F2475</description>
+<wire x1="-3.98" y1="-6" x2="3.98" y2="-6" width="0.254" layer="21"/>
+<wire x1="6" y1="-3.98" x2="6" y2="3.98" width="0.254" layer="21"/>
+<wire x1="3.98" y1="6" x2="-3.98" y2="6" width="0.254" layer="21"/>
+<wire x1="-6" y1="3.98" x2="-6" y2="-3.98" width="0.254" layer="21"/>
+<wire x1="-5.25" y1="6" x2="-6" y2="5.25" width="0.254" layer="51"/>
+<wire x1="5.25" y1="6" x2="6" y2="5.25" width="0.254" layer="51"/>
+<wire x1="6" y1="-5.25" x2="5.25" y2="-6" width="0.254" layer="51"/>
+<wire x1="-5.25" y1="-6" x2="-6" y2="-5.25" width="0.254" layer="51"/>
+<wire x1="-1.5" y1="0.5" x2="1.5" y2="0.5" width="0.3048" layer="21" curve="-143.130102"/>
+<wire x1="-1.5" y1="-0.5" x2="1.5" y2="-0.5" width="0.3048" layer="21" curve="143.130102"/>
+<wire x1="-4.572" y1="1.016" x2="-5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="1.016" x2="-5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="-1.016" x2="-4.572" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="4.572" y1="-1.016" x2="5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="-1.016" x2="5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="1.016" x2="4.572" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-6" y1="5.25" x2="-6" y2="3.81" width="0.254" layer="51"/>
+<wire x1="-6" y1="-3.81" x2="-6" y2="-5.25" width="0.254" layer="51"/>
+<wire x1="-5.25" y1="-6" x2="-3.81" y2="-6" width="0.254" layer="51"/>
+<wire x1="6" y1="-5.25" x2="6" y2="-3.81" width="0.254" layer="51"/>
+<wire x1="3.81" y1="-6" x2="5.25" y2="-6" width="0.254" layer="51"/>
+<wire x1="-3.81" y1="6" x2="-5.25" y2="6" width="0.254" layer="51"/>
+<wire x1="6" y1="3.81" x2="6" y2="5.25" width="0.254" layer="51"/>
+<wire x1="5.25" y1="6" x2="3.81" y2="6" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="4.5961" width="0.254" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
+<pad name="2" x="5.08" y="5.08" drill="1.016" diameter="1.778"/>
+<pad name="3" x="-5.08" y="5.08" drill="1.016" diameter="1.778"/>
+<pad name="4" x="-5.08" y="-5.08" drill="1.016" diameter="1.778"/>
+<pad name="5" x="5.08" y="-5.08" drill="1.016" diameter="1.778"/>
+<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<symbol name="BU-BNC">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.254" x2="-0.762" y2="0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.254" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.254" x2="-2.54" y2="-0.254" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2SC945" prefix="T">
-<description>&lt;b&gt;NPN Silicon Epitaxial Planar Transistor&lt;/b&gt;&lt;p&gt;
-Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
+<deviceset name="A1944-50" prefix="X">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt; 50 Ohm&lt;p&gt;
+distributor Buerklin 78F2475</description>
 <gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
+<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92-ECB">
+<device name="" package="A1944">
 <connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 3 4 5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="lm385">
+<description>LM385 Voltage Reference Diodes</description>
+<packages>
+<package name="TO-92">
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.098957"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.09954"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.293591"/>
+<pad name="-" x="-1.77" y="0" drill="0.8128" shape="octagon"/>
+<pad name="+" x="0" y="1.405" drill="0.8128" shape="octagon"/>
+<pad name="FB" x="1.77" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LM385">
+<text x="-0.4064" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
+<text x="0.6096" y="5.6642" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="-" x="10.16" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="FB" x="2.54" y="-7.62" visible="pad" length="middle" rot="R90"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LM385" prefix="D">
+<description>&lt;h2&gt;LM385&lt;/h2&gt;
+
+LM385 Micropower Voltage Reference</description>
+<gates>
+<gate name="G$1" symbol="LM385" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-92">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4286,21 +4324,20 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="ALIMENTACION-PLACA" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="ALIMENTACION-BATERIAS" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="CORRIENTE-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="BNC-TENSION" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="BNC-HALL" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="V-PLACA" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="V-BAT" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="I-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="BNC-TENSION" library="con-coax" deviceset="A1944-50" device=""/>
+<part name="BNC-HALL" library="con-coax" deviceset="A1944-50" device=""/>
 <part name="CHECK" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="PRESION-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="BNC-HR" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="BNC-PRESION" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="TENSION-PLACA" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="HR-PLACA" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="HALL-PLACA" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="LM385-FCORR" library="transistor" deviceset="2SC945" device=""/>
-<part name="R-FCORR" library="resistor" deviceset="R-US_" device="0204/7" value="820"/>
-<part name="R-REG-OFFSET" library="resistor" deviceset="R-US_" device="0204/7" value="680k"/>
+<part name="P-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="BNC-HR" library="con-coax" deviceset="A1944-50" device=""/>
+<part name="BNC-PRESION" library="con-coax" deviceset="A1944-50" device=""/>
+<part name="T-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="HR-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="HALL-PLACA" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="R2" library="resistor" deviceset="R-US_" device="0204/7" value="820"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="0204/7" value="680k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/7" value="20k"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="20k"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="1k"/>
@@ -4309,40 +4346,43 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <part name="R8" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
 <part name="R9" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
-<part name="RG-PRESION" library="resistor" deviceset="R-US_" device="0204/7" value="820"/>
-<part name="R-REG-FCORR" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
-<part name="PREAMP-PRESION" library="analog-devices" deviceset="AD620" device="N"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0204/7" value="820"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="IC2" library="analog-devices" deviceset="AD620" device="N"/>
 <part name="IC3" library="linear" deviceset="TL084" device="P"/>
 <part name="IC4" library="linear" deviceset="TL084" device="P"/>
-<part name="SWITCH" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="SWITCH-GRAL" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="RCHECK" library="resistor" deviceset="R-US_" device="0204/7" value="100k"/>
 <part name="CHECK-LED" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="OPAMP-FCORR" library="linear" deviceset="LM318" device="N"/>
-<part name="SEGUIDOS-PREAMP-PRESION" library="linear" deviceset="LM318" device="N"/>
-<part name="LM385-OFFSET" library="transistor" deviceset="2SC945" device=""/>
+<part name="IC1" library="linear" deviceset="NE5534" device="N" technology="A" value="NE5534AN"/>
+<part name="IC5" library="linear" deviceset="NE5534" device="N" technology="A" value="NE5534AN"/>
 <part name="POT-OFFSET" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="POT-GAIN" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="SWITCH-P" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="+12V-FUSE" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="-12V-FUSE" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="D1" library="lm385" deviceset="LM385" device=""/>
+<part name="D2" library="lm385" deviceset="LM385" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="ALIMENTACION-PLACA" gate="A" x="-35.56" y="86.36"/>
-<instance part="ALIMENTACION-BATERIAS" gate="A" x="22.86" y="132.08"/>
-<instance part="CORRIENTE-PLACA" gate="G$1" x="134.62" y="101.6"/>
-<instance part="BNC-TENSION" gate="G$1" x="408.94" y="111.76"/>
-<instance part="BNC-HALL" gate="G$1" x="408.94" y="99.06"/>
+<instance part="V-PLACA" gate="A" x="-35.56" y="86.36"/>
+<instance part="V-BAT" gate="A" x="22.86" y="132.08"/>
+<instance part="I-PLACA" gate="G$1" x="134.62" y="101.6"/>
+<instance part="BNC-TENSION" gate="G$1" x="414.02" y="116.84" rot="R180"/>
+<instance part="BNC-HALL" gate="G$1" x="414.02" y="101.6" rot="R180"/>
 <instance part="CHECK" gate="G$1" x="-35.56" y="63.5"/>
-<instance part="PRESION-PLACA" gate="G$1" x="-35.56" y="139.7"/>
-<instance part="BNC-HR" gate="G$1" x="408.94" y="86.36"/>
-<instance part="BNC-PRESION" gate="G$1" x="408.94" y="124.46"/>
-<instance part="TENSION-PLACA" gate="G$1" x="-35.56" y="127"/>
+<instance part="P-PLACA" gate="G$1" x="-35.56" y="139.7"/>
+<instance part="BNC-HR" gate="G$1" x="414.02" y="86.36" rot="R180"/>
+<instance part="BNC-PRESION" gate="G$1" x="414.02" y="132.08" rot="R180"/>
+<instance part="T-PLACA" gate="G$1" x="-35.56" y="127"/>
 <instance part="HR-PLACA" gate="G$1" x="-35.56" y="116.84"/>
 <instance part="HALL-PLACA" gate="G$1" x="-35.56" y="106.68"/>
-<instance part="LM385-FCORR" gate="G$1" x="76.2" y="101.6"/>
-<instance part="R-FCORR" gate="G$1" x="83.82" y="83.82" rot="R90"/>
-<instance part="R-REG-OFFSET" gate="G$1" x="208.28" y="121.92" rot="R270"/>
+<instance part="R2" gate="G$1" x="83.82" y="83.82" rot="R90"/>
+<instance part="R12" gate="G$1" x="208.28" y="121.92" rot="R270"/>
 <instance part="R3" gate="G$1" x="254" y="109.22"/>
 <instance part="R4" gate="G$1" x="271.78" y="99.06"/>
 <instance part="R5" gate="G$1" x="175.26" y="45.72" rot="R90"/>
@@ -4351,9 +4391,9 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <instance part="R8" gate="G$1" x="335.28" y="48.26"/>
 <instance part="R9" gate="G$1" x="251.46" y="33.02"/>
 <instance part="R10" gate="G$1" x="251.46" y="66.04"/>
-<instance part="RG-PRESION" gate="G$1" x="78.74" y="38.1" rot="R90"/>
-<instance part="R-REG-FCORR" gate="G$1" x="83.82" y="119.38" rot="R90"/>
-<instance part="PREAMP-PRESION" gate="G$1" x="96.52" y="38.1"/>
+<instance part="R1" gate="G$1" x="78.74" y="38.1" rot="R90"/>
+<instance part="R11" gate="G$1" x="71.12" y="119.38" rot="R90"/>
+<instance part="IC2" gate="G$1" x="96.52" y="38.1"/>
 <instance part="IC3" gate="A" x="223.52" y="109.22"/>
 <instance part="IC3" gate="B" x="271.78" y="111.76"/>
 <instance part="IC3" gate="C" x="307.34" y="109.22"/>
@@ -4362,63 +4402,62 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <instance part="IC4" gate="B" x="276.86" y="50.8"/>
 <instance part="IC4" gate="C" x="307.34" y="48.26"/>
 <instance part="IC4" gate="D" x="355.6" y="50.8"/>
-<instance part="SWITCH" gate="A" x="22.86" y="111.76"/>
+<instance part="SWITCH-GRAL" gate="A" x="22.86" y="111.76"/>
 <instance part="RCHECK" gate="G$1" x="-17.78" y="63.5"/>
 <instance part="CHECK-LED" gate="G$1" x="2.54" y="60.96"/>
-<instance part="OPAMP-FCORR" gate="A" x="96.52" y="104.14"/>
-<instance part="SEGUIDOS-PREAMP-PRESION" gate="A" x="223.52" y="33.02"/>
-<instance part="LM385-OFFSET" gate="G$1" x="200.66" y="106.68"/>
+<instance part="IC1" gate="A" x="96.52" y="104.14"/>
+<instance part="IC5" gate="A" x="223.52" y="33.02"/>
 <instance part="POT-OFFSET" gate="A" x="248.92" y="139.7" rot="R180"/>
 <instance part="POT-GAIN" gate="A" x="370.84" y="25.4" rot="R270"/>
+<instance part="SWITCH-P" gate="A" x="22.86" y="88.9"/>
+<instance part="+12V-FUSE" gate="G$1" x="-2.54" y="162.56"/>
+<instance part="-12V-FUSE" gate="G$1" x="-2.54" y="149.86"/>
+<instance part="D1" gate="G$1" x="210.82" y="104.14" rot="R270"/>
+<instance part="D2" gate="G$1" x="73.66" y="99.06" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="+12V" class="0">
-<segment>
-<pinref part="ALIMENTACION-PLACA" gate="A" pin="1"/>
-<wire x1="-38.1" y1="88.9" x2="-27.94" y2="88.9" width="0.1524" layer="91"/>
-<label x="-33.02" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SWITCH" gate="A" pin="1"/>
-<wire x1="20.32" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<label x="25.4" y="116.84" size="1.778" layer="95"/>
-</segment>
+<net name="+12V-PRESION" class="0">
 <segment>
 <pinref part="CHECK" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
 <label x="-33.02" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OPAMP-FCORR" gate="A" pin="V+"/>
+<pinref part="IC1" gate="A" pin="V+"/>
 <wire x1="93.98" y1="111.76" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <label x="93.98" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="+V"/>
+<pinref part="IC2" gate="G$1" pin="+V"/>
 <wire x1="96.52" y1="53.34" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <label x="96.52" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R-REG-FCORR" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="124.46" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
-<label x="83.82" y="129.54" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="124.46" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
+<label x="71.12" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R-REG-OFFSET" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="127" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 <label x="208.28" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SEGUIDOS-PREAMP-PRESION" gate="A" pin="V+"/>
+<pinref part="IC5" gate="A" pin="V+"/>
 <wire x1="220.98" y1="40.64" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
 <label x="220.98" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH-P" gate="A" pin="2"/>
+<wire x1="20.32" y1="91.44" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
+<label x="25.4" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="0V" class="0">
 <segment>
-<pinref part="ALIMENTACION-PLACA" gate="A" pin="2"/>
+<pinref part="V-PLACA" gate="A" pin="2"/>
 <wire x1="-38.1" y1="86.36" x2="-27.94" y2="86.36" width="0.1524" layer="91"/>
 <label x="-30.48" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -4428,36 +4467,36 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <label x="7.62" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R-FCORR" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="78.74" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
 <label x="81.28" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LM385-FCORR" gate="G$1" pin="B"/>
-<wire x1="66.04" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="101.6" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
-<label x="66.04" y="88.9" size="1.778" layer="95"/>
-<pinref part="LM385-FCORR" gate="G$1" pin="E"/>
-<wire x1="78.74" y1="96.52" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
-<junction x="66.04" y="93.98"/>
-<wire x1="66.04" y1="93.98" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="FB"/>
+<wire x1="66.04" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="96.52" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="-"/>
+<wire x1="63.5" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="83.82" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="83.82" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
+<junction x="71.12" y="83.82"/>
+<label x="71.12" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="REF"/>
+<pinref part="IC2" gate="G$1" pin="REF"/>
 <wire x1="101.6" y1="27.94" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
 <label x="101.6" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LM385-OFFSET" gate="G$1" pin="E"/>
-<wire x1="203.2" y1="101.6" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="96.52" x2="190.5" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="96.52" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="LM385-OFFSET" gate="G$1" pin="B"/>
-<wire x1="190.5" y1="106.68" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="96.52" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
-<junction x="190.5" y="96.52"/>
-<label x="190.5" y="91.44" size="1.778" layer="95"/>
+<wire x1="200.66" y1="101.6" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+<label x="203.2" y="81.28" size="1.778" layer="95"/>
+<pinref part="D1" gate="G$1" pin="FB"/>
+<wire x1="200.66" y1="88.9" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="-"/>
+<wire x1="208.28" y1="93.98" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+<junction x="200.66" y="88.9"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="B" pin="+IN"/>
@@ -4477,79 +4516,72 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </segment>
 <segment>
 <pinref part="BNC-PRESION" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="124.46" x2="396.24" y2="124.46" width="0.1524" layer="91"/>
-<label x="396.24" y="124.46" size="1.778" layer="95"/>
+<wire x1="411.48" y1="134.62" x2="396.24" y2="134.62" width="0.1524" layer="91"/>
+<label x="396.24" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="BNC-TENSION" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="111.76" x2="396.24" y2="111.76" width="0.1524" layer="91"/>
-<label x="396.24" y="111.76" size="1.778" layer="95"/>
+<wire x1="411.48" y1="119.38" x2="396.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="396.24" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="BNC-HALL" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="99.06" x2="396.24" y2="99.06" width="0.1524" layer="91"/>
-<label x="396.24" y="99.06" size="1.778" layer="95"/>
+<wire x1="411.48" y1="104.14" x2="396.24" y2="104.14" width="0.1524" layer="91"/>
+<label x="396.24" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="BNC-HR" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="86.36" x2="396.24" y2="86.36" width="0.1524" layer="91"/>
-<label x="396.24" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="-12V" class="0">
-<segment>
-<pinref part="ALIMENTACION-PLACA" gate="A" pin="3"/>
-<wire x1="-38.1" y1="83.82" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
-<label x="-33.02" y="83.82" size="1.778" layer="95"/>
+<wire x1="411.48" y1="88.9" x2="396.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="396.24" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SWITCH" gate="A" pin="3"/>
-<wire x1="20.32" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
-<label x="25.4" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="OPAMP-FCORR" gate="A" pin="V-"/>
-<wire x1="93.98" y1="96.52" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-<label x="93.98" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="-V"/>
-<wire x1="96.52" y1="22.86" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
-<label x="96.52" y="17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SEGUIDOS-PREAMP-PRESION" gate="A" pin="V-"/>
-<wire x1="220.98" y1="25.4" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
-<label x="220.98" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+12VBAT" class="0">
-<segment>
-<pinref part="ALIMENTACION-BATERIAS" gate="A" pin="1"/>
-<wire x1="20.32" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
-<label x="25.4" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SWITCH" gate="A" pin="2"/>
-<wire x1="20.32" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-<label x="25.4" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="0VBAT" class="0">
-<segment>
-<pinref part="ALIMENTACION-BATERIAS" gate="A" pin="2"/>
+<pinref part="V-BAT" gate="A" pin="2"/>
 <wire x1="20.32" y1="132.08" x2="30.48" y2="132.08" width="0.1524" layer="91"/>
 <label x="27.94" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="-12V-PRESION" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="V-"/>
+<wire x1="93.98" y1="96.52" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
+<label x="93.98" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="-V"/>
+<wire x1="96.52" y1="22.86" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
+<label x="96.52" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="A" pin="V-"/>
+<wire x1="220.98" y1="25.4" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
+<label x="220.98" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH-P" gate="A" pin="4"/>
+<wire x1="20.32" y1="86.36" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
+<label x="25.4" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+12VBAT" class="0">
+<segment>
+<pinref part="V-BAT" gate="A" pin="1"/>
+<wire x1="20.32" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<label x="25.4" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH-GRAL" gate="A" pin="2"/>
+<wire x1="20.32" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<label x="25.4" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="-12VBAT" class="0">
 <segment>
-<pinref part="ALIMENTACION-BATERIAS" gate="A" pin="3"/>
+<pinref part="V-BAT" gate="A" pin="3"/>
 <wire x1="20.32" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
 <label x="25.4" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SWITCH" gate="A" pin="4"/>
+<pinref part="SWITCH-GRAL" gate="A" pin="4"/>
 <wire x1="20.32" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 <label x="25.4" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -4570,19 +4602,19 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LM385-FCORR" gate="G$1" pin="C"/>
-<wire x1="88.9" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="OPAMP-FCORR" gate="A" pin="+IN"/>
-<pinref part="R-REG-FCORR" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="114.3" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
-<junction x="83.82" y="106.68"/>
+<wire x1="88.9" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="+IN"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="114.3" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="+"/>
+<wire x1="71.12" y1="104.14" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<junction x="71.12" y="106.68"/>
 </segment>
 </net>
 <net name="-I" class="0">
 <segment>
-<pinref part="OPAMP-FCORR" gate="A" pin="-IN"/>
-<pinref part="R-FCORR" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="101.6" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="91.44" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
@@ -4590,64 +4622,64 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <junction x="83.82" y="91.44"/>
 <label x="124.46" y="101.6" size="1.778" layer="95"/>
 <wire x1="124.46" y1="91.44" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="CORRIENTE-PLACA" gate="G$1" pin="2"/>
+<pinref part="I-PLACA" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+I" class="0">
 <segment>
-<pinref part="OPAMP-FCORR" gate="A" pin="OUT"/>
+<pinref part="IC1" gate="A" pin="OUT"/>
 <wire x1="104.14" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <label x="124.46" y="104.14" size="1.778" layer="95"/>
-<pinref part="CORRIENTE-PLACA" gate="G$1" pin="1"/>
+<pinref part="I-PLACA" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="RG-PRESION" gate="G$1" pin="2"/>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="RG@1"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="G$1" pin="RG@1"/>
 <wire x1="78.74" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="RG-PRESION" gate="G$1" pin="1"/>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="RG@2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="G$1" pin="RG@2"/>
 <wire x1="78.74" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="P+" class="0">
 <segment>
-<pinref part="PRESION-PLACA" gate="G$1" pin="1"/>
+<pinref part="P-PLACA" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 <label x="-30.48" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="+"/>
+<pinref part="IC2" gate="G$1" pin="+"/>
 <wire x1="88.9" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
 <label x="83.82" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P-" class="0">
 <segment>
-<pinref part="PRESION-PLACA" gate="G$1" pin="2"/>
+<pinref part="P-PLACA" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="139.7" x2="-27.94" y2="139.7" width="0.1524" layer="91"/>
 <label x="-30.48" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="-"/>
+<pinref part="IC2" gate="G$1" pin="-"/>
 <wire x1="88.9" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
 <label x="83.82" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PRESION-PREAMP" class="0">
+<net name="P-PREAMP" class="0">
 <segment>
-<pinref part="PREAMP-PRESION" gate="G$1" pin="OUT"/>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
 <wire x1="109.22" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
 <label x="111.76" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SEGUIDOS-PREAMP-PRESION" gate="A" pin="+IN"/>
+<pinref part="IC5" gate="A" pin="+IN"/>
 <wire x1="215.9" y1="35.56" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
 <label x="193.04" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -4674,13 +4706,13 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="LM385-OFFSET" gate="G$1" pin="C"/>
 <pinref part="IC3" gate="A" pin="+IN"/>
-<wire x1="203.2" y1="111.76" x2="208.28" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R-REG-OFFSET" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="111.76" x2="215.9" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="116.84" x2="208.28" y2="111.76" width="0.1524" layer="91"/>
 <junction x="208.28" y="111.76"/>
+<pinref part="D1" gate="G$1" pin="+"/>
+<wire x1="208.28" y1="109.22" x2="208.28" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4778,12 +4810,12 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="SEGUIDOS-PREAMP-PRESION" gate="A" pin="-IN"/>
+<pinref part="IC5" gate="A" pin="-IN"/>
 <wire x1="215.9" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="30.48" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="20.32" x2="238.76" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="20.32" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="SEGUIDOS-PREAMP-PRESION" gate="A" pin="OUT"/>
+<pinref part="IC5" gate="A" pin="OUT"/>
 <wire x1="238.76" y1="33.02" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="33.02" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
@@ -4846,7 +4878,7 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <junction x="342.9" y="48.26"/>
 </segment>
 </net>
-<net name="PRESION" class="0">
+<net name="POUT" class="0">
 <segment>
 <pinref part="POT-GAIN" gate="A" pin="2"/>
 <wire x1="370.84" y1="27.94" x2="370.84" y2="50.8" width="0.1524" layer="91"/>
@@ -4858,18 +4890,18 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 </segment>
 <segment>
 <pinref part="BNC-PRESION" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="127" x2="396.24" y2="127" width="0.1524" layer="91"/>
-<label x="396.24" y="127" size="1.778" layer="95"/>
+<wire x1="411.48" y1="132.08" x2="396.24" y2="132.08" width="0.1524" layer="91"/>
+<label x="396.24" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TENSION" class="0">
 <segment>
 <pinref part="BNC-TENSION" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="114.3" x2="396.24" y2="114.3" width="0.1524" layer="91"/>
-<label x="396.24" y="114.3" size="1.778" layer="95"/>
+<wire x1="411.48" y1="116.84" x2="396.24" y2="116.84" width="0.1524" layer="91"/>
+<label x="396.24" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TENSION-PLACA" gate="G$1" pin="1"/>
+<pinref part="T-PLACA" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="127" x2="-27.94" y2="127" width="0.1524" layer="91"/>
 <label x="-30.48" y="127" size="1.778" layer="95"/>
 </segment>
@@ -4877,11 +4909,11 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <net name="HALL" class="0">
 <segment>
 <pinref part="BNC-HALL" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="101.6" x2="396.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="101.6" x2="396.24" y2="101.6" width="0.1524" layer="91"/>
 <label x="396.24" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="HALL-PLACA" gate="G$1" pin="1"/>
+<pinref part="HALL-PLACA" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="106.68" x2="-27.94" y2="106.68" width="0.1524" layer="91"/>
 <label x="-30.48" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -4889,13 +4921,71 @@ Source: SEMTECH ELECTRONICS LTD. ... 2SC945  2.pdf</description>
 <net name="HR" class="0">
 <segment>
 <pinref part="BNC-HR" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="88.9" x2="396.24" y2="88.9" width="0.1524" layer="91"/>
-<label x="396.24" y="88.9" size="1.778" layer="95"/>
+<wire x1="411.48" y1="86.36" x2="396.24" y2="86.36" width="0.1524" layer="91"/>
+<label x="396.24" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="HR-PLACA" gate="G$1" pin="1"/>
+<pinref part="HR-PLACA" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="116.84" x2="-27.94" y2="116.84" width="0.1524" layer="91"/>
 <label x="-30.48" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="V-PLACA" gate="A" pin="1"/>
+<wire x1="-38.1" y1="88.9" x2="-27.94" y2="88.9" width="0.1524" layer="91"/>
+<label x="-33.02" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH-P" gate="A" pin="1"/>
+<wire x1="20.32" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="25.4" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="+12V-FUSE" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="162.56" x2="5.08" y2="162.56" width="0.1524" layer="91"/>
+<label x="0" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="V-PLACA" gate="A" pin="3"/>
+<wire x1="-38.1" y1="83.82" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
+<label x="-33.02" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SWITCH-P" gate="A" pin="3"/>
+<wire x1="20.32" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<label x="25.4" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="-12V-FUSE" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="149.86" x2="5.08" y2="149.86" width="0.1524" layer="91"/>
+<label x="0" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+12VFUSE" class="0">
+<segment>
+<pinref part="SWITCH-GRAL" gate="A" pin="1"/>
+<wire x1="20.32" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+<label x="25.4" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="+12V-FUSE" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="165.1" x2="5.08" y2="165.1" width="0.1524" layer="91"/>
+<label x="0" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="-12VFUSE" class="0">
+<segment>
+<pinref part="SWITCH-GRAL" gate="A" pin="3"/>
+<wire x1="20.32" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<label x="25.4" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="-12V-FUSE" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="152.4" x2="5.08" y2="152.4" width="0.1524" layer="91"/>
+<label x="0" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
