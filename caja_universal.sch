@@ -3781,35 +3781,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
-NS Package M08A</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
@@ -3875,25 +3846,6 @@ NS Package M08A</description>
 <rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
 </package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -3914,34 +3866,6 @@ NS Package M08A</description>
 <text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
 <pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-</symbol>
-<symbol name="2NUL2CMP">
-<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.8862" width="0.1524" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="2.6162" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-2.6162" width="0.1524" layer="94"/>
-<wire x1="2.6924" y1="1.3208" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="-3.8862" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-<text x="2.54" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">ON</text>
-<text x="1.27" y="-5.08" size="0.8128" layer="93" rot="R90">CMP</text>
-<text x="3.175" y="2.54" size="0.8128" layer="93" rot="R90">ON/CMP</text>
-<text x="-1.27" y="4.445" size="0.8128" layer="93" rot="R90">V+</text>
-<text x="-1.27" y="-5.715" size="0.8128" layer="93" rot="R90">V-</text>
-<pin name="ON/CMP" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
-<pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
-<pin name="ON" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="CMP" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="V+" x="-2.54" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
-<pin name="V-" x="-2.54" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3995,47 +3919,6 @@ NS Package M08A</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NE5534" prefix="IC">
-<description>&lt;b&gt;LOW-NOISE OPERATIONAL AMPLIFIER&lt;/b&gt;&lt;p&gt;
-Source: http://focus.ti.com/lit/ds/symlink/ne5534.pdf</description>
-<gates>
-<gate name="A" symbol="2NUL2CMP" x="5.08" y="0"/>
-</gates>
-<devices>
-<device name="N" package="DIL08">
-<connects>
-<connect gate="A" pin="+IN" pad="3"/>
-<connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="CMP" pad="5"/>
-<connect gate="A" pin="ON" pad="1"/>
-<connect gate="A" pin="ON/CMP" pad="8"/>
-<connect gate="A" pin="OUT" pad="6"/>
-<connect gate="A" pin="V+" pad="7"/>
-<connect gate="A" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-<technology name="A"/>
-</technologies>
-</device>
-<device name="D" package="SO08">
-<connects>
-<connect gate="A" pin="+IN" pad="3"/>
-<connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="CMP" pad="5"/>
-<connect gate="A" pin="ON" pad="1"/>
-<connect gate="A" pin="ON/CMP" pad="8"/>
-<connect gate="A" pin="OUT" pad="6"/>
-<connect gate="A" pin="V+" pad="7"/>
-<connect gate="A" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-<technology name="A"/>
 </technologies>
 </device>
 </devices>
@@ -4094,6 +3977,25 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="H08">
+<description>&lt;b&gt;8-Lead Metal Can TO-99&lt;/b&gt; (H-8)&lt;p&gt;
+Source: http://www.analog.com/static/imported-files/data_sheets/AD711.pdf</description>
+<wire x1="-4.572" y1="0.508" x2="-5.334" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-5.334" y1="-0.508" x2="-5.334" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-5.334" y1="-0.508" x2="-4.572" y2="-0.508" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4.572" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4.2252" width="0.0508" layer="21"/>
+<pad name="4" x="2.54" y="0" drill="0.8" diameter="1.3"/>
+<pad name="8" x="-2.54" y="0" drill="0.8" diameter="1.3"/>
+<pad name="2" x="0" y="-2.54" drill="0.8" diameter="1.3"/>
+<pad name="6" x="0" y="2.54" drill="0.8" diameter="1.3"/>
+<pad name="1" x="-1.7961" y="-1.7961" drill="0.8" diameter="1.3"/>
+<pad name="3" x="1.7961" y="-1.7961" drill="0.8" diameter="1.3"/>
+<pad name="5" x="1.7961" y="1.7961" drill="0.8" diameter="1.3"/>
+<pad name="7" x="-1.7961" y="1.7961" drill="0.8" diameter="1.3"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-6.35" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AD620">
@@ -4117,6 +4019,30 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pin name="RG@1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
 <pin name="RG@2" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
 <pin name="REF" x="5.08" y="-10.16" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="OP_OFFSET+-VS">
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.842" x2="0" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-5.842" width="0.1524" layer="94"/>
+<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.778" y="1.778" size="1.27" layer="96">+</text>
+<text x="-1.524" y="-2.794" size="1.27" layer="96">-</text>
+<text x="0.762" y="3.937" size="1.016" layer="96" rot="MR0">+VS</text>
+<text x="0.762" y="-3.937" size="1.016" layer="96" rot="R180">-VS</text>
+<text x="5.588" y="-2.159" size="1.016" layer="96" rot="R270">OFF</text>
+<text x="5.461" y="2.032" size="1.016" layer="96" rot="MR90">OFF</text>
+<pin name="IN+" x="-5.08" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="IN-" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="-VS" x="0" y="-10.16" visible="pad" length="short" direction="in" rot="R90"/>
+<pin name="+VS" x="0" y="10.16" visible="pad" length="short" direction="in" rot="R270"/>
+<pin name="OFF@1" x="5.08" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="OFF@2" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4164,6 +4090,72 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/37793330023930AD620_e.pd
 <attribute name="MPN" value="AD620AN" constant="no"/>
 <attribute name="OC_FARNELL" value="1523782" constant="no"/>
 <attribute name="OC_NEWARK" value="05F7108" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD711" prefix="IC">
+<description>&lt;b&gt;Precision, Low Cost, High Speed, BiFET Op Amp&lt;/b&gt;&lt;p&gt;
+Source: http://www.analog.com/static/imported-files/data_sheets/AD711.pdf</description>
+<gates>
+<gate name="G$1" symbol="OP_OFFSET+-VS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="N" package="DIL08">
+<connects>
+<connect gate="G$1" pin="+VS" pad="7"/>
+<connect gate="G$1" pin="-VS" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OFF@1" pad="1"/>
+<connect gate="G$1" pin="OFF@2" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="AD711BQ" constant="no"/>
+<attribute name="OC_FARNELL" value="9604839" constant="no"/>
+<attribute name="OC_NEWARK" value="66F5826" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="RN" package="SO8">
+<connects>
+<connect gate="G$1" pin="+VS" pad="7"/>
+<connect gate="G$1" pin="-VS" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OFF@1" pad="1"/>
+<connect gate="G$1" pin="OFF@2" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="ALTERA CORPORATION" constant="no"/>
+<attribute name="MPN" value="AD711KRZ" constant="no"/>
+<attribute name="OC_FARNELL" value="9426396" constant="no"/>
+<attribute name="OC_NEWARK" value="59K4541" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="H" package="H08">
+<connects>
+<connect gate="G$1" pin="+VS" pad="7"/>
+<connect gate="G$1" pin="-VS" pad="4"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OFF@1" pad="1"/>
+<connect gate="G$1" pin="OFF@2" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4354,8 +4346,6 @@ LM385 Micropower Voltage Reference</description>
 <part name="SWITCH-GRAL" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="RCHECK" library="resistor" deviceset="R-US_" device="0204/7" value="100k"/>
 <part name="CHECK-LED" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="IC1" library="linear" deviceset="NE5534" device="N" technology="A" value="NE5534AN"/>
-<part name="IC5" library="linear" deviceset="NE5534" device="N" technology="A" value="NE5534AN"/>
 <part name="POT-OFFSET" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="POT-GAIN" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="SWITCH-P" library="pinhead" deviceset="PINHD-1X4" device=""/>
@@ -4363,6 +4353,8 @@ LM385 Micropower Voltage Reference</description>
 <part name="-12V-FUSE" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="D1" library="lm385" deviceset="LM385" device=""/>
 <part name="D2" library="lm385" deviceset="LM385" device=""/>
+<part name="IC1" library="analog-devices" deviceset="AD711" device="N"/>
+<part name="IC5" library="analog-devices" deviceset="AD711" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -4405,8 +4397,6 @@ LM385 Micropower Voltage Reference</description>
 <instance part="SWITCH-GRAL" gate="A" x="22.86" y="111.76"/>
 <instance part="RCHECK" gate="G$1" x="-17.78" y="63.5"/>
 <instance part="CHECK-LED" gate="G$1" x="2.54" y="60.96"/>
-<instance part="IC1" gate="A" x="96.52" y="104.14"/>
-<instance part="IC5" gate="A" x="223.52" y="33.02"/>
 <instance part="POT-OFFSET" gate="A" x="248.92" y="139.7" rot="R180"/>
 <instance part="POT-GAIN" gate="A" x="370.84" y="25.4" rot="R270"/>
 <instance part="SWITCH-P" gate="A" x="22.86" y="88.9"/>
@@ -4414,6 +4404,8 @@ LM385 Micropower Voltage Reference</description>
 <instance part="-12V-FUSE" gate="G$1" x="-2.54" y="149.86"/>
 <instance part="D1" gate="G$1" x="210.82" y="104.14" rot="R270"/>
 <instance part="D2" gate="G$1" x="73.66" y="99.06" rot="R270"/>
+<instance part="IC1" gate="G$1" x="104.14" y="104.14"/>
+<instance part="IC5" gate="G$1" x="223.52" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -4423,11 +4415,6 @@ LM385 Micropower Voltage Reference</description>
 <pinref part="CHECK" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
 <label x="-33.02" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="A" pin="V+"/>
-<wire x1="93.98" y1="111.76" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
-<label x="93.98" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="+V"/>
@@ -4445,14 +4432,19 @@ LM385 Micropower Voltage Reference</description>
 <label x="208.28" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="V+"/>
-<wire x1="220.98" y1="40.64" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
-<label x="220.98" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SWITCH-P" gate="A" pin="2"/>
 <wire x1="20.32" y1="91.44" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 <label x="25.4" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="+VS"/>
+<wire x1="104.14" y1="114.3" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<label x="104.14" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="+VS"/>
+<wire x1="223.52" y1="43.18" x2="223.52" y2="48.26" width="0.1524" layer="91"/>
+<label x="223.52" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="0V" class="0">
@@ -4542,9 +4534,9 @@ LM385 Micropower Voltage Reference</description>
 </net>
 <net name="-12V-PRESION" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="V-"/>
-<wire x1="93.98" y1="96.52" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-<label x="93.98" y="93.98" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="-VS"/>
+<wire x1="104.14" y1="93.98" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
+<label x="104.14" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="-V"/>
@@ -4552,14 +4544,14 @@ LM385 Micropower Voltage Reference</description>
 <label x="96.52" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="V-"/>
-<wire x1="220.98" y1="25.4" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
-<label x="220.98" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SWITCH-P" gate="A" pin="4"/>
 <wire x1="20.32" y1="86.36" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
 <label x="25.4" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="-VS"/>
+<wire x1="223.52" y1="22.86" x2="223.52" y2="15.24" width="0.1524" layer="91"/>
+<label x="223.52" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12VBAT" class="0">
@@ -4602,21 +4594,19 @@ LM385 Micropower Voltage Reference</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="88.9" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="+IN"/>
 <pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="114.3" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="+"/>
 <wire x1="71.12" y1="104.14" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <junction x="71.12" y="106.68"/>
+<pinref part="IC1" gate="G$1" pin="IN+"/>
+<wire x1="99.06" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-I" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="-IN"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="101.6" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="91.44" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <junction x="83.82" y="91.44"/>
@@ -4624,14 +4614,17 @@ LM385 Micropower Voltage Reference</description>
 <wire x1="124.46" y1="91.44" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="I-PLACA" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="IN-"/>
+<wire x1="99.06" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+I" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="OUT"/>
-<wire x1="104.14" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <label x="124.46" y="104.14" size="1.778" layer="95"/>
 <pinref part="I-PLACA" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4679,9 +4672,9 @@ LM385 Micropower Voltage Reference</description>
 <label x="111.76" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="+IN"/>
-<wire x1="215.9" y1="35.56" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="35.56" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
 <label x="193.04" y="35.56" size="1.778" layer="95"/>
+<pinref part="IC5" gate="G$1" pin="IN+"/>
 </segment>
 </net>
 <net name="1.25V" class="0">
@@ -4810,16 +4803,16 @@ LM385 Micropower Voltage Reference</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="IC5" gate="A" pin="-IN"/>
-<wire x1="215.9" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="30.48" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="20.32" x2="238.76" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="20.32" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="A" pin="OUT"/>
-<wire x1="238.76" y1="33.02" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="33.02" x2="233.68" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="33.02" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
 <junction x="238.76" y="33.02"/>
+<pinref part="IC5" gate="G$1" pin="OUT"/>
+<wire x1="213.36" y1="30.48" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="IN-"/>
+<wire x1="238.76" y1="20.32" x2="213.36" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
