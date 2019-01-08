@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -4548,11 +4547,6 @@ LM385 Micropower Voltage Reference</description>
 <nets>
 <net name="V+" class="0">
 <segment>
-<pinref part="CHECK" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
-<label x="-33.02" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="+V"/>
 <wire x1="96.52" y1="53.34" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <label x="96.52" y="60.96" size="1.778" layer="95"/>
@@ -4713,6 +4707,11 @@ LM385 Micropower Voltage Reference</description>
 <wire x1="20.32" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
 <label x="25.4" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CHECK" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
+<label x="-33.02" y="66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="-12VBAT" class="0">
 <segment>
@@ -4840,9 +4839,9 @@ LM385 Micropower Voltage Reference</description>
 <label x="238.76" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POT-OFFSET" gate="A" pin="2"/>
-<wire x1="251.46" y1="139.7" x2="261.62" y2="139.7" width="0.1524" layer="91"/>
-<label x="259.08" y="139.7" size="1.778" layer="95"/>
+<pinref part="POT-OFFSET" gate="A" pin="1"/>
+<wire x1="251.46" y1="137.16" x2="261.62" y2="137.16" width="0.1524" layer="91"/>
+<label x="259.08" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -4882,14 +4881,14 @@ LM385 Micropower Voltage Reference</description>
 </net>
 <net name="OFFSET" class="0">
 <segment>
-<pinref part="POT-OFFSET" gate="A" pin="1"/>
-<wire x1="251.46" y1="137.16" x2="261.62" y2="137.16" width="0.1524" layer="91"/>
-<label x="259.08" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="D" pin="+IN"/>
 <wire x1="180.34" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
 <label x="167.64" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POT-OFFSET" gate="A" pin="2"/>
+<wire x1="251.46" y1="139.7" x2="261.62" y2="139.7" width="0.1524" layer="91"/>
+<label x="259.08" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="-1.25V" class="0">
