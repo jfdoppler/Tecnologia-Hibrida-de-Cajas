@@ -1600,28 +1600,28 @@ Source: AVX .. aphvc.pdf</description>
 <packages>
 <package name="DX07S024WJ1">
 <smd name="GND4" x="-2.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="P-" x="-2.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="P+" x="-1.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="T4" x="-1.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="B8" x="-0.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="B7" x="-0.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="B6" x="0.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="B5" x="0.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="T3" x="1.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="B3" x="1.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="B2" x="2.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="E2" x="-2.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="E1" x="-1.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="-12VB" x="-1.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC7" x="-0.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC6" x="-0.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC5" x="0.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="T" x="0.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC4" x="1.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC3" x="1.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="+12V" x="2.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
 <smd name="GND3" x="2.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
 <smd name="GND1" x="-2.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="-12V" x="-2.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="+12V" x="-1.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="T1" x="-1.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="+I" x="-0.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC1" x="-2.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="-I" x="-1.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="-12VA" x="-1.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="P-" x="-0.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
 <smd name="CHECK1" x="-0.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
 <smd name="CHECK2" x="0.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="-I" x="0.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="T2" x="1.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="HALL" x="1.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="01" x="2.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="+I" x="0.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="NC2" x="1.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="P+" x="1.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
+<smd name="HALL" x="2.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
 <smd name="GND2" x="2.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
 <circle x="-2.75" y="1.75" radius="0.22360625" width="0" layer="21"/>
 <wire x1="-5.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
@@ -1729,29 +1729,29 @@ Source: AVX .. aphvc.pdf</description>
 <device name="" package="DX07S024WJ1">
 <connects>
 <connect gate="G$1" pin="A1" pad="GND1"/>
-<connect gate="G$1" pin="A10" pad="HALL"/>
-<connect gate="G$1" pin="A11" pad="01"/>
+<connect gate="G$1" pin="A10" pad="P+"/>
+<connect gate="G$1" pin="A11" pad="HALL"/>
 <connect gate="G$1" pin="A12" pad="GND2"/>
-<connect gate="G$1" pin="A2" pad="-12V"/>
-<connect gate="G$1" pin="A3" pad="+12V"/>
-<connect gate="G$1" pin="A4" pad="T1"/>
-<connect gate="G$1" pin="A5" pad="+I"/>
+<connect gate="G$1" pin="A2" pad="NC1"/>
+<connect gate="G$1" pin="A3" pad="-I"/>
+<connect gate="G$1" pin="A4" pad="-12VA"/>
+<connect gate="G$1" pin="A5" pad="P-"/>
 <connect gate="G$1" pin="A6" pad="CHECK1"/>
 <connect gate="G$1" pin="A7" pad="CHECK2"/>
-<connect gate="G$1" pin="A8" pad="-I"/>
-<connect gate="G$1" pin="A9" pad="T2"/>
+<connect gate="G$1" pin="A8" pad="+I"/>
+<connect gate="G$1" pin="A9" pad="NC2"/>
 <connect gate="G$1" pin="B1" pad="GND3"/>
-<connect gate="G$1" pin="B10" pad="P+"/>
-<connect gate="G$1" pin="B11" pad="P-"/>
+<connect gate="G$1" pin="B10" pad="E1"/>
+<connect gate="G$1" pin="B11" pad="E2"/>
 <connect gate="G$1" pin="B12" pad="GND4"/>
-<connect gate="G$1" pin="B2" pad="B2"/>
-<connect gate="G$1" pin="B3" pad="B3"/>
-<connect gate="G$1" pin="B4" pad="T3"/>
-<connect gate="G$1" pin="B5" pad="B5"/>
-<connect gate="G$1" pin="B6" pad="B6"/>
-<connect gate="G$1" pin="B7" pad="B7"/>
-<connect gate="G$1" pin="B8" pad="B8"/>
-<connect gate="G$1" pin="B9" pad="T4"/>
+<connect gate="G$1" pin="B2" pad="+12V"/>
+<connect gate="G$1" pin="B3" pad="NC3"/>
+<connect gate="G$1" pin="B4" pad="NC4"/>
+<connect gate="G$1" pin="B5" pad="T"/>
+<connect gate="G$1" pin="B6" pad="NC5"/>
+<connect gate="G$1" pin="B7" pad="NC6"/>
+<connect gate="G$1" pin="B8" pad="NC7"/>
+<connect gate="G$1" pin="B9" pad="-12VB"/>
 </connects>
 <technologies>
 <technology name=""/>
