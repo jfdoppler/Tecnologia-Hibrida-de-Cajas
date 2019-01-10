@@ -62,7 +62,8 @@
 <wire x1="118.4" y1="-13" x2="118.4" y2="88.54" width="0" layer="20"/>
 <wire x1="118.4" y1="88.54" x2="-18.3" y2="88.54" width="0" layer="20"/>
 <wire x1="-18.3" y1="88.54" x2="-18.4" y2="-12.9" width="0" layer="20"/>
-<text x="-14" y="61" size="1.778" layer="1" rot="R270">LSD - Tecnologia Hibrida de Cajas</text>
+<text x="-13" y="75" size="2.1844" layer="1" font="vector" rot="R270">LSD - Tecnologia Hibrida de Cajas</text>
+<text x="110" y="22" size="2.1844" layer="1" font="vector" rot="R90">Version 1 - Enero 2019</text>
 </plain>
 <libraries>
 <library name="pinhead">

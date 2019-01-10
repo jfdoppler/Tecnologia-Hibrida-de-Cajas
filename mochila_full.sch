@@ -1599,31 +1599,31 @@ Source: AVX .. aphvc.pdf</description>
 <library name="USBC_LSD">
 <packages>
 <package name="DX07S024WJ1">
-<smd name="GND4" x="-2.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="E2" x="-2.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="E1" x="-1.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="-12VB" x="-1.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC7" x="-0.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC6" x="-0.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC5" x="0.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="T" x="0.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC4" x="1.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC3" x="1.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="+12V" x="2.25" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="GND3" x="2.75" y="-2.2" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="GND1" x="-2.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC1" x="-2.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="-I" x="-1.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="-12VA" x="-1.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="P-" x="-0.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="CHECK1" x="-0.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="CHECK2" x="0.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="+I" x="0.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="NC2" x="1.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="P+" x="1.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="HALL" x="2.25" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<smd name="GND2" x="2.75" y="2.35" dx="1.4" dy="0.12" layer="1" rot="R90"/>
-<circle x="-2.75" y="1.75" radius="0.22360625" width="0" layer="21"/>
+<smd name="GND4" x="-2.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="E2" x="-2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="E1" x="-1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="-12VB" x="-1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC7" x="-0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC6" x="-0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC5" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="T" x="0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC4" x="1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC3" x="1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="+12V" x="2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="GND3" x="2.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="GND1" x="-2.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC1" x="-2.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="-I" x="-1.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="-12VA" x="-1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="P-" x="-0.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="CHECK1" x="-0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="CHECK2" x="0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="+I" x="0.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="NC2" x="1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="P+" x="1.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="HALL" x="2.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="GND2" x="2.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<circle x="-2.75" y="2.0548" radius="0.22360625" width="0" layer="21"/>
 <wire x1="-5.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="2.5" width="0.127" layer="51"/>
 <wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="51"/>
@@ -1632,9 +1632,9 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="5.5" y1="3.5" x2="5.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="5.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="3.5" y1="-3.5" x2="3.5" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="3.5" y1="-2.4" x2="-3.7" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-2.4" x2="-3.7" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-3.5" x2="-5.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-2.4" x2="-3.4968" y2="-2.4" width="0.127" layer="51"/>
+<wire x1="-3.4968" y1="-2.4" x2="-3.4968" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.4968" y1="-3.5" x2="-5.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="-5.5" y1="-3.5" x2="-5.5" y2="3.5" width="0.127" layer="51"/>
 <wire x1="-5.5" y1="3.5" x2="-5.5" y2="-3.4" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="21"/>
@@ -1642,35 +1642,15 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="5.5" y1="3.5" x2="5.5" y2="-3.5" width="0.127" layer="21"/>
 <text x="-3.2" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.6" y="-5.8" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-3.5" y="1.35" radius="0.22360625" width="0.127" layer="1"/>
-<circle x="3.5" y="1.35" radius="0.22360625" width="0.127" layer="1"/>
-<circle x="-3.55" y="0" radius="0.22360625" width="0.127" layer="1"/>
-<circle x="3.5" y="0" radius="0.22360625" width="0.127" layer="1"/>
-<polygon width="0.127" layer="1">
-<vertex x="-3.3" y="2.8"/>
-<vertex x="-3.85" y="2.8"/>
-<vertex x="-3.85" y="3.25"/>
-<vertex x="-3.3" y="3.25"/>
-</polygon>
-<polygon width="0.127" layer="1">
-<vertex x="-3.5" y="-3.15"/>
-<vertex x="-4.1" y="-3.15"/>
-<vertex x="-4.1" y="-2.7"/>
-<vertex x="-3.5" y="-2.7"/>
-</polygon>
-<polygon width="0.127" layer="1">
-<vertex x="3.9" y="-3.25"/>
-<vertex x="3.25" y="-3.25"/>
-<vertex x="3.25" y="-2.8"/>
-<vertex x="3.9" y="-2.8"/>
-</polygon>
-<polygon width="0.127" layer="1">
-<vertex x="3.9" y="2.85"/>
-<vertex x="3.3" y="2.85"/>
-<vertex x="3.3" y="3.3"/>
-<vertex x="3.9" y="3.3"/>
-</polygon>
-<smd name="P$1" x="0" y="3.35" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<circle x="-3.5052" y="1.3462" radius="0.3048" width="0.127" layer="1"/>
+<circle x="3.5052" y="1.4986" radius="0.3048" width="0.127" layer="1"/>
+<smd name="P$1" x="0" y="3.35" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<rectangle x1="-4.8006" y1="2.667" x2="-3.5052" y2="3.4798" layer="1"/>
+<rectangle x1="3.5052" y1="2.667" x2="4.8006" y2="3.4798" layer="1"/>
+<rectangle x1="-4.8006" y1="-3.4798" x2="-3.5052" y2="-2.667" layer="1"/>
+<rectangle x1="3.5052" y1="-3.4798" x2="4.8006" y2="-2.667" layer="1"/>
+<rectangle x1="-4.2672" y1="-0.2794" x2="-3.3274" y2="0.2794" layer="1"/>
+<rectangle x1="3.3274" y1="-0.2794" x2="4.2672" y2="0.2794" layer="1"/>
 </package>
 </packages>
 <symbols>
