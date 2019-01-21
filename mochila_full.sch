@@ -1600,26 +1600,26 @@ Source: AVX .. aphvc.pdf</description>
 <packages>
 <package name="DX07S024WJ1">
 <smd name="GND4" x="-2.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="E2" x="-2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="E1" x="-1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="-12VB" x="-1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA2" x="-2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA1" x="-1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3B" x="-1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC7" x="-0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC6" x="-0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC5" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="T" x="0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC4" x="1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="-12V" x="-0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA4" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="OUTT" x="0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3D" x="1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC3" x="1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="+12V" x="2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="GND3" x="2.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="GND1" x="-2.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC1" x="-2.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="-I" x="-1.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="-12VA" x="-1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3A" x="-1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="P-" x="-0.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="CHECK1" x="-0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="CHECK2" x="0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="ANULADA1" x="-0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="ANULADA2" x="0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="+I" x="0.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC2" x="1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3C" x="1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="P+" x="1.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="HALL" x="2.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="GND2" x="2.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
@@ -1644,7 +1644,6 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-3.6" y="-5.8" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="-3.5052" y="1.3462" radius="0.3048" width="0.127" layer="1"/>
 <circle x="3.5052" y="1.4986" radius="0.3048" width="0.127" layer="1"/>
-<smd name="P$1" x="0" y="3.35" dx="1.27" dy="0.762" layer="1" rot="R90"/>
 <rectangle x1="-4.8006" y1="2.667" x2="-3.5052" y2="3.4798" layer="1"/>
 <rectangle x1="3.5052" y1="2.667" x2="4.8006" y2="3.4798" layer="1"/>
 <rectangle x1="-4.8006" y1="-3.4798" x2="-3.5052" y2="-2.667" layer="1"/>
@@ -1714,24 +1713,24 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="A12" pad="GND2"/>
 <connect gate="G$1" pin="A2" pad="NC1"/>
 <connect gate="G$1" pin="A3" pad="-I"/>
-<connect gate="G$1" pin="A4" pad="-12VA"/>
+<connect gate="G$1" pin="A4" pad="EXTRA3A"/>
 <connect gate="G$1" pin="A5" pad="P-"/>
-<connect gate="G$1" pin="A6" pad="CHECK1"/>
-<connect gate="G$1" pin="A7" pad="CHECK2"/>
+<connect gate="G$1" pin="A6" pad="ANULADA1"/>
+<connect gate="G$1" pin="A7" pad="ANULADA2"/>
 <connect gate="G$1" pin="A8" pad="+I"/>
-<connect gate="G$1" pin="A9" pad="NC2"/>
+<connect gate="G$1" pin="A9" pad="EXTRA3C"/>
 <connect gate="G$1" pin="B1" pad="GND3"/>
-<connect gate="G$1" pin="B10" pad="E1"/>
-<connect gate="G$1" pin="B11" pad="E2"/>
+<connect gate="G$1" pin="B10" pad="EXTRA1"/>
+<connect gate="G$1" pin="B11" pad="EXTRA2"/>
 <connect gate="G$1" pin="B12" pad="GND4"/>
 <connect gate="G$1" pin="B2" pad="+12V"/>
 <connect gate="G$1" pin="B3" pad="NC3"/>
-<connect gate="G$1" pin="B4" pad="NC4"/>
-<connect gate="G$1" pin="B5" pad="T"/>
-<connect gate="G$1" pin="B6" pad="NC5"/>
-<connect gate="G$1" pin="B7" pad="NC6"/>
+<connect gate="G$1" pin="B4" pad="EXTRA3D"/>
+<connect gate="G$1" pin="B5" pad="OUTT"/>
+<connect gate="G$1" pin="B6" pad="EXTRA4"/>
+<connect gate="G$1" pin="B7" pad="-12V"/>
 <connect gate="G$1" pin="B8" pad="NC7"/>
-<connect gate="G$1" pin="B9" pad="-12VB"/>
+<connect gate="G$1" pin="B9" pad="EXTRA3B"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1909,14 +1908,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="60.96" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A4"/>
-<wire x1="142.24" y1="35.56" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
-<label x="142.24" y="43.18" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="B9"/>
-<wire x1="142.24" y1="10.16" x2="142.24" y2="5.08" width="0.1524" layer="91"/>
-<label x="142.24" y="5.08" size="1.778" layer="95" rot="R270"/>
+<pinref part="U$1" gate="G$1" pin="B7"/>
+<wire x1="152.4" y1="10.16" x2="152.4" y2="5.08" width="0.1524" layer="91"/>
+<label x="152.4" y="5.08" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="OUTT" class="0">
@@ -2010,13 +2004,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="G$1" pin="B8"/>
 <wire x1="147.32" y1="10.16" x2="147.32" y2="5.08" width="0.1524" layer="91"/>
 <label x="147.32" y="5.08" size="1.778" layer="95" rot="R270"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="B7"/>
-<wire x1="152.4" y1="10.16" x2="152.4" y2="5.08" width="0.1524" layer="91"/>
-<label x="152.4" y="5.08" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="N$25" class="0">

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="7.87401575" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -245,26 +244,26 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <packages>
 <package name="DX07S024WJ1">
 <smd name="GND4" x="-2.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="E2" x="-2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="E1" x="-1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="-12VB" x="-1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA2" x="-2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA1" x="-1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3B" x="-1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC7" x="-0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC6" x="-0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC5" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="T" x="0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC4" x="1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="-12V" x="-0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA4" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="OUTT" x="0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3D" x="1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC3" x="1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="+12V" x="2.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="GND3" x="2.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="GND1" x="-2.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC1" x="-2.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="-I" x="-1.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="-12VA" x="-1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3A" x="-1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="P-" x="-0.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="CHECK1" x="-0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="CHECK2" x="0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="ANULADA1" x="-0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="ANULADA2" x="0.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="+I" x="0.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="NC2" x="1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="EXTRA3C" x="1.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="P+" x="1.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="HALL" x="2.25" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="GND2" x="2.75" y="2.85" dx="1.4" dy="0.254" layer="1" rot="R90"/>
@@ -289,7 +288,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <text x="-3.6" y="-5.8" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="-3.5052" y="1.3462" radius="0.3048" width="0.127" layer="1"/>
 <circle x="3.5052" y="1.4986" radius="0.3048" width="0.127" layer="1"/>
-<smd name="P$1" x="0" y="3.35" dx="1.27" dy="0.762" layer="1" rot="R90"/>
 <rectangle x1="-4.8006" y1="2.667" x2="-3.5052" y2="3.4798" layer="1"/>
 <rectangle x1="3.5052" y1="2.667" x2="4.8006" y2="3.4798" layer="1"/>
 <rectangle x1="-4.8006" y1="-3.4798" x2="-3.5052" y2="-2.667" layer="1"/>
@@ -384,14 +382,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -614,7 +608,6 @@ design rules under a new name.</description>
 <wire x1="31.2225" y1="26.7775" x2="31" y2="27" width="0.254" layer="1"/>
 <wire x1="37.5" y1="25.5" x2="36.7225" y2="30.4725" width="0" layer="19" extent="1-1"/>
 <wire x1="31.2225" y1="30.4725" x2="31" y2="27" width="0" layer="19" extent="1-1"/>
-<wire x1="41.41" y1="17.765" x2="36.83" y2="21.9075" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$5">
 <contactref element="RG" pad="2"/>
@@ -627,8 +620,8 @@ design rules under a new name.</description>
 <contactref element="RG" pad="1"/>
 <contactref element="IC1" pad="8"/>
 <wire x1="41.57" y1="23.2925" x2="41.37" y2="23.2925" width="0.254" layer="16"/>
-<wire x1="41.37" y1="23.2925" x2="37.9325" y2="26.73" width="0.254" layer="16"/>
-<wire x1="35.76" y1="26.73" x2="37.9325" y2="26.73" width="0.254" layer="16"/>
+<wire x1="41.37" y1="23.2925" x2="37.3325" y2="25.73" width="0.254" layer="16"/>
+<wire x1="35.76" y1="26.73" x2="37.3325" y2="25.73" width="0.254" layer="16"/>
 </signal>
 <signal name="+12V">
 <contactref element="IC1" pad="7"/>
@@ -655,23 +648,22 @@ design rules under a new name.</description>
 </signal>
 <signal name="-12V">
 <contactref element="IC1" pad="4"/>
-<contactref element="U$1" pad="-12VA"/>
-<contactref element="U$1" pad="-12VB"/>
 <wire x1="29.21" y1="22.5425" x2="30.81" y2="22.5775" width="0.254" layer="1"/>
 <wire x1="30.7975" y1="21.59" x2="29.21" y2="22.5425" width="0.254" layer="16"/>
 <wire x1="30.7975" y1="21.59" x2="31.95" y2="21.53" width="0.254" layer="16"/>
 <via x="29.21" y="22.5425" extent="1-16" drill="0.254" diameter="1.016" shape="square"/>
-<wire x1="32.7225" y1="24.9225" x2="32.7225" y2="22.5775" width="0.254" layer="1"/>
 <wire x1="32.7225" y1="22.5775" x2="30.81" y2="22.5775" width="0.254" layer="1"/>
-<wire x1="32.7225" y1="24.9225" x2="32.7225" y2="30.4725" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="-12V"/>
+<wire x1="33.7225" y1="24.9225" x2="33.7225" y2="23.5775" width="0.254" layer="1"/>
+<wire x1="33.7225" y1="23.5775" x2="32.7225" y2="22.5775" width="0.254" layer="1"/>
 </signal>
 <signal name="OUTT">
 <contactref element="IC1" pad="6"/>
-<wire x1="33.22" y1="25" x2="33.9725" y2="23.4125" width="0.254" layer="16"/>
+<wire x1="33.22" y1="25" x2="34.5725" y2="23.4125" width="0.254" layer="16"/>
 <wire x1="33.22" y1="26.73" x2="33.22" y2="25" width="0.254" layer="16"/>
-<via x="33.9725" y="23.4125" extent="1-16" drill="0.254" diameter="0.8128" shape="square"/>
-<wire x1="33.9725" y1="23.4125" x2="34.7225" y2="23.8125" width="0.254" layer="1"/>
-<contactref element="U$1" pad="T"/>
+<via x="34.5725" y="23.4125" extent="1-16" drill="0.254" diameter="0.8128" shape="square"/>
+<wire x1="34.5725" y1="23.4125" x2="34.7225" y2="23.8125" width="0.254" layer="1"/>
+<contactref element="U$1" pad="OUTT"/>
 <wire x1="34.7225" y1="24.9225" x2="34.7225" y2="23.8125" width="0.254" layer="1"/>
 </signal>
 <signal name="+I">
@@ -681,10 +673,10 @@ design rules under a new name.</description>
 <wire x1="34.7225" y1="35.56" x2="37.7825" y2="35.56" width="0.254" layer="1"/>
 </signal>
 <signal name="N$12">
-<contactref element="U$1" pad="CHECK1"/>
+<contactref element="U$1" pad="ANULADA1"/>
 </signal>
 <signal name="N$13">
-<contactref element="U$1" pad="CHECK2"/>
+<contactref element="U$1" pad="ANULADA2"/>
 </signal>
 <signal name="-I">
 <contactref element="FUJIKURASOCKET" pad="5"/>
@@ -695,9 +687,9 @@ design rules under a new name.</description>
 <signal name="OUTH">
 <contactref element="HALL-IN" pad="3"/>
 <contactref element="U$1" pad="HALL"/>
-<wire x1="36.2225" y1="30.4725" x2="36.2225" y2="31.8" width="0.254" layer="1"/>
-<wire x1="36.2225" y1="31.8" x2="40.4" y2="31.8" width="0.254" layer="1"/>
-<wire x1="40.4" y1="31.8" x2="40.4" y2="31.115" width="0.254" layer="1"/>
+<wire x1="36.2225" y1="30.4725" x2="36.2225" y2="31.6" width="0.254" layer="1"/>
+<wire x1="36.2225" y1="31.6" x2="40.4" y2="31.6" width="0.254" layer="1"/>
+<wire x1="40.4" y1="31.6" x2="40.4" y2="31.115" width="0.254" layer="1"/>
 <wire x1="40.4" y1="31.115" x2="41.61" y2="31.115" width="0.254" layer="1"/>
 </signal>
 <signal name="OUTP-">
@@ -715,14 +707,11 @@ design rules under a new name.</description>
 <signal name="NC7">
 <contactref element="U$1" pad="NC7"/>
 </signal>
-<signal name="N$24">
-<contactref element="U$1" pad="NC6"/>
-</signal>
 <signal name="N$25">
-<contactref element="U$1" pad="NC5"/>
+<contactref element="U$1" pad="EXTRA4"/>
 </signal>
 <signal name="NC3">
-<contactref element="U$1" pad="NC4"/>
+<contactref element="U$1" pad="EXTRA3D"/>
 </signal>
 <signal name="+5V">
 <contactref element="HALL-IN" pad="1"/>
@@ -743,25 +732,18 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="NC1"/>
 </signal>
 <signal name="EXTRA2">
-<contactref element="U$1" pad="E2"/>
+<contactref element="U$1" pad="EXTRA2"/>
 </signal>
 <signal name="NC2">
-<contactref element="U$1" pad="NC2"/>
+<contactref element="U$1" pad="EXTRA3C"/>
 </signal>
 <signal name="NC6">
 <contactref element="U$1" pad="NC3"/>
 </signal>
 <signal name="EXTRA1">
-<contactref element="U$1" pad="E1"/>
+<contactref element="U$1" pad="EXTRA1"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
