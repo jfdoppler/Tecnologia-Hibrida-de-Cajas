@@ -1605,7 +1605,7 @@ Source: AVX .. aphvc.pdf</description>
 <smd name="EXTRA3B" x="-1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC7" x="-0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="-12V" x="-0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
-<smd name="EXTRA4" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
+<smd name="OUTHR" x="0.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="OUTT" x="0.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="EXTRA3D" x="1.25" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
 <smd name="NC3" x="1.75" y="-2.7" dx="1.4" dy="0.254" layer="1" rot="R90"/>
@@ -1642,7 +1642,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="5.5" y1="3.5" x2="5.5" y2="-3.5" width="0.127" layer="21"/>
 <text x="-3.2" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.6" y="-5.8" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-3.5052" y="1.3462" radius="0.3048" width="0.127" layer="1"/>
+<circle x="-3.5" y="1.4" radius="0.3048" width="0.127" layer="1"/>
 <circle x="3.5052" y="1.4986" radius="0.3048" width="0.127" layer="1"/>
 <rectangle x1="-4.8006" y1="2.667" x2="-3.5052" y2="3.4798" layer="1"/>
 <rectangle x1="3.5052" y1="2.667" x2="4.8006" y2="3.4798" layer="1"/>
@@ -1650,6 +1650,39 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="3.5052" y1="-3.4798" x2="4.8006" y2="-2.667" layer="1"/>
 <rectangle x1="-4.2672" y1="-0.2794" x2="-3.3274" y2="0.2794" layer="1"/>
 <rectangle x1="3.3274" y1="-0.2794" x2="4.2672" y2="0.2794" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-4.8" y="-2.4"/>
+<vertex x="-3.4" y="-2.4"/>
+<vertex x="-3.4" y="-3.8"/>
+<vertex x="-5" y="-3.8"/>
+<vertex x="-5" y="-2.4"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="3.4" y="-2.4"/>
+<vertex x="5" y="-2.4"/>
+<vertex x="5" y="-3.8"/>
+<vertex x="3.4" y="-3.8"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-5" y="3.8"/>
+<vertex x="-3.4" y="3.8"/>
+<vertex x="-3.4" y="2.4"/>
+<vertex x="-5" y="2.4"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="3.4" y="3.8"/>
+<vertex x="5" y="3.8"/>
+<vertex x="5" y="2.4"/>
+<vertex x="3.4" y="2.4"/>
+</polygon>
+<hole x="-4.2" y="3.1" drill="1"/>
+<hole x="-4.2" y="-3.1" drill="1"/>
+<hole x="4.2" y="-3.1" drill="1"/>
+<hole x="4.2" y="3.1" drill="1"/>
+<hole x="3.5" y="1.5" drill="0.7"/>
+<hole x="-3.5" y="1.4" drill="0.7"/>
+<hole x="-3.8" y="0" drill="0.7"/>
+<hole x="3.8" y="0" drill="0.7"/>
 </package>
 </packages>
 <symbols>
@@ -1727,7 +1760,7 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="B3" pad="NC3"/>
 <connect gate="G$1" pin="B4" pad="EXTRA3D"/>
 <connect gate="G$1" pin="B5" pad="OUTT"/>
-<connect gate="G$1" pin="B6" pad="EXTRA4"/>
+<connect gate="G$1" pin="B6" pad="OUTHR"/>
 <connect gate="G$1" pin="B7" pad="-12V"/>
 <connect gate="G$1" pin="B8" pad="NC7"/>
 <connect gate="G$1" pin="B9" pad="EXTRA3B"/>
