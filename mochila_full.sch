@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1642,47 +1643,14 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="5.5" y1="3.5" x2="5.5" y2="-3.5" width="0.127" layer="21"/>
 <text x="-3.2" y="4.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.6" y="-5.8" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-3.5" y="1.4" radius="0.3048" width="0.127" layer="1"/>
-<circle x="3.5052" y="1.4986" radius="0.3048" width="0.127" layer="1"/>
-<rectangle x1="-4.8006" y1="2.667" x2="-3.5052" y2="3.4798" layer="1"/>
-<rectangle x1="3.5052" y1="2.667" x2="4.8006" y2="3.4798" layer="1"/>
-<rectangle x1="-4.8006" y1="-3.4798" x2="-3.5052" y2="-2.667" layer="1"/>
-<rectangle x1="3.5052" y1="-3.4798" x2="4.8006" y2="-2.667" layer="1"/>
-<rectangle x1="-4.2672" y1="-0.2794" x2="-3.3274" y2="0.2794" layer="1"/>
-<rectangle x1="3.3274" y1="-0.2794" x2="4.2672" y2="0.2794" layer="1"/>
-<polygon width="0.127" layer="29">
-<vertex x="-4.8" y="-2.4"/>
-<vertex x="-3.4" y="-2.4"/>
-<vertex x="-3.4" y="-3.8"/>
-<vertex x="-5" y="-3.8"/>
-<vertex x="-5" y="-2.4"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="3.4" y="-2.4"/>
-<vertex x="5" y="-2.4"/>
-<vertex x="5" y="-3.8"/>
-<vertex x="3.4" y="-3.8"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-5" y="3.8"/>
-<vertex x="-3.4" y="3.8"/>
-<vertex x="-3.4" y="2.4"/>
-<vertex x="-5" y="2.4"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="3.4" y="3.8"/>
-<vertex x="5" y="3.8"/>
-<vertex x="5" y="2.4"/>
-<vertex x="3.4" y="2.4"/>
-</polygon>
-<hole x="-4.2" y="3.1" drill="1"/>
-<hole x="-4.2" y="-3.1" drill="1"/>
-<hole x="4.2" y="-3.1" drill="1"/>
-<hole x="4.2" y="3.1" drill="1"/>
-<hole x="3.5" y="1.5" drill="0.7"/>
-<hole x="-3.5" y="1.4" drill="0.7"/>
-<hole x="-3.8" y="0" drill="0.7"/>
-<hole x="3.8" y="0" drill="0.7"/>
+<pad name="PATA1" x="-4.1" y="3.12" drill="1.4" diameter="1.6" rot="R180"/>
+<pad name="PATA2" x="4.1" y="3.12" drill="1.4" diameter="1.6"/>
+<pad name="PATA3" x="4.1" y="-3.02" drill="1.4" diameter="1.6"/>
+<pad name="PATA4" x="-4.1" y="-3.02" drill="1.4" diameter="1.6" rot="R180"/>
+<pad name="PATA5" x="-3.5" y="1.4" drill="1" diameter="1.1"/>
+<pad name="PATA6" x="3.5" y="1.4" drill="1" diameter="1.1"/>
+<pad name="PATA7" x="-3.775" y="0.05" drill="1" diameter="1.2"/>
+<pad name="PATA8" x="3.775" y="0.05" drill="1" diameter="1.2"/>
 </package>
 </packages>
 <symbols>
@@ -1717,6 +1685,14 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-2.54" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-22.86" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PATA1" x="-12.7" y="5.08" length="middle" direction="pas"/>
+<pin name="PATA5" x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="PATA7" x="-12.7" y="-5.08" length="middle" direction="pas"/>
+<pin name="PATA4" x="-12.7" y="-10.16" length="middle" direction="pas"/>
+<pin name="PATA3" x="63.5" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PATA8" x="63.5" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PATA6" x="63.5" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PATA2" x="63.5" y="5.08" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1764,6 +1740,14 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="B7" pad="-12V"/>
 <connect gate="G$1" pin="B8" pad="NC7"/>
 <connect gate="G$1" pin="B9" pad="EXTRA3B"/>
+<connect gate="G$1" pin="PATA1" pad="PATA1"/>
+<connect gate="G$1" pin="PATA2" pad="PATA2"/>
+<connect gate="G$1" pin="PATA3" pad="PATA3"/>
+<connect gate="G$1" pin="PATA4" pad="PATA4"/>
+<connect gate="G$1" pin="PATA5" pad="PATA5"/>
+<connect gate="G$1" pin="PATA6" pad="PATA6"/>
+<connect gate="G$1" pin="PATA7" pad="PATA7"/>
+<connect gate="G$1" pin="PATA8" pad="PATA8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5247,19 +5231,58 @@ Source: AVX .. aphvc.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="60.96" y="58.42"/>
-<instance part="RG" gate="G$1" x="45.72" y="58.42" rot="R90"/>
-<instance part="C4" gate="G$1" x="22.86" y="48.26" rot="R90"/>
-<instance part="C3" gate="G$1" x="22.86" y="68.58" rot="R90"/>
-<instance part="R1" gate="G$1" x="38.1" y="38.1" rot="R270"/>
-<instance part="R2" gate="G$1" x="38.1" y="73.66" rot="R270"/>
-<instance part="VS" gate="G$1" x="-15.24" y="55.88"/>
-<instance part="FUJI" gate="G$1" x="104.14" y="78.74"/>
-<instance part="USBC" gate="G$1" x="129.54" y="25.4"/>
-<instance part="HALL" gate="A" x="93.98" y="27.94"/>
-<instance part="REG5V" gate="G$1" x="81.28" y="109.22"/>
-<instance part="C1" gate="G$1" x="63.5" y="104.14"/>
-<instance part="C2" gate="G$1" x="101.6" y="104.14"/>
+<instance part="IC1" gate="G$1" x="60.96" y="58.42" smashed="yes">
+<attribute name="NAME" x="69.85" y="64.77" size="1.778" layer="95"/>
+<attribute name="VALUE" x="69.85" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="RG" gate="G$1" x="45.72" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="44.2214" y="54.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="49.022" y="54.61" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C4" gate="G$1" x="22.86" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.479" y="49.784" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="27.559" y="49.784" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C3" gate="G$1" x="22.86" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.479" y="70.104" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="27.559" y="70.104" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="38.1" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.5986" y="41.91" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="34.798" y="41.91" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R2" gate="G$1" x="38.1" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.5986" y="77.47" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="34.798" y="77.47" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="VS" gate="G$1" x="-15.24" y="55.88" smashed="yes">
+<attribute name="NAME" x="-21.59" y="61.595" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-21.59" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="FUJI" gate="G$1" x="104.14" y="78.74" smashed="yes">
+<attribute name="NAME" x="99.695" y="83.185" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.695" y="72.39" size="1.778" layer="96"/>
+</instance>
+<instance part="USBC" gate="G$1" x="129.54" y="25.4" smashed="yes">
+<attribute name="NAME" x="127" y="40.64" size="1.27" layer="95"/>
+<attribute name="VALUE" x="127" y="2.54" size="1.27" layer="96"/>
+</instance>
+<instance part="HALL" gate="A" x="93.98" y="27.94" smashed="yes">
+<attribute name="NAME" x="87.63" y="33.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.63" y="20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="REG5V" gate="G$1" x="81.28" y="109.22" smashed="yes">
+<attribute name="NAME" x="76.2" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="76.2" y="112.395" size="1.778" layer="96"/>
+</instance>
+<instance part="C1" gate="G$1" x="63.5" y="104.14" smashed="yes">
+<attribute name="NAME" x="65.024" y="104.521" size="1.778" layer="95"/>
+<attribute name="VALUE" x="65.024" y="99.441" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="101.6" y="104.14" smashed="yes">
+<attribute name="NAME" x="103.124" y="104.521" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.124" y="99.441" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5338,6 +5361,48 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="81.28" y="96.52"/>
 <wire x1="81.28" y1="96.52" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 <label x="81.28" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA1"/>
+<wire x1="116.84" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
+<label x="106.68" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA5"/>
+<wire x1="116.84" y1="25.4" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
+<label x="106.68" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA7"/>
+<wire x1="116.84" y1="20.32" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="20.32" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+<label x="106.68" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA4"/>
+<wire x1="116.84" y1="15.24" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
+<label x="106.68" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA2"/>
+<wire x1="193.04" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
+<label x="200.66" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA6"/>
+<wire x1="193.04" y1="25.4" x2="203.2" y2="25.4" width="0.1524" layer="91"/>
+<label x="200.66" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA8"/>
+<wire x1="193.04" y1="20.32" x2="203.2" y2="20.32" width="0.1524" layer="91"/>
+<label x="200.66" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBC" gate="G$1" pin="PATA3"/>
+<wire x1="193.04" y1="15.24" x2="203.2" y2="15.24" width="0.1524" layer="91"/>
+<label x="200.66" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5470,6 +5535,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="FUJI" gate="G$1" pin="6"/>
 <wire x1="111.76" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 <label x="119.38" y="81.28" size="1.778" layer="95"/>
+<pinref part="FUJI" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="81.28" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="88.9" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+<junction x="111.76" y="81.28"/>
 </segment>
 <segment>
 <pinref part="USBC" gate="G$1" pin="A5"/>
